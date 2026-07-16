@@ -12,3 +12,6 @@ env/
 # Configuraciones de IDEs locales
 .vscode/
 .idea/
+
+# Archivos de texto
+directrices_password_antigravity.txt
