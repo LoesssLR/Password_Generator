@@ -6,9 +6,20 @@ import re
 # [RULE-01] and [RULE-02] Dictionary of weak passwords / basic dictionary
 # For practical purposes, we simulate a list of the weakest passwords
 TOP_PEORES = {
-    "123456", "password", "12345678", "qwerty", "12345", "123456789", 
-    "iloveyou", "admin", "111111", "contraseña", "contrasenia", "qazwsx",
-    "password123", "admin123", "welcome", "sunshine", "monkey"
+    # Sequence and keyboard patterns
+    "123456", "12345678", "12345", "123456789", "111111", "1234567", "123123", "qwerty", "qazwsx", "asdfgh", "zxcvbn", 
+    # English common passwords
+    "password", "password123", "admin", "admin123", "iloveyou", "welcome", "sunshine", "monkey", "dragon", 
+    "baseball", "letmein", "football", "shadow", "mustang", "superman", "mypassword", "princess", "internet", 
+    "picture", "secret", "hello", "starwars", "computer", "daniel", "joshua", "michael", "ashley", "matthew", 
+    "jessica", "andrew", "thomas", "hannah", "samantha", "hunter", "charles", "christian", "jackson", "william", 
+    "alexander", "robert", "richard", "joseph", "samuel", "david", "anthony", "steven", "kenneth",
+    # Spanish common passwords
+    "contraseña", "contrasenia", "teamo", "princesa", "america", "chivas", "alejandro", "carlos", "roberto", 
+    "estrella", "futbol", "barcelona", "madrid", "gatito", "perrito", "aguilas", "campeon", "corazon", "santiago", 
+    "sebastian", "nicolas", "matias", "mateo", "valeria", "isabella", "ximena", "cruzazul", "pumas", "tigres", 
+    "rayados", "chiquita", "hermosa", "mariposa", "muñeca", "muneca", "caballo", "cruz", "jesus", "maria", "jose", 
+    "angel", "luis", "dios", "juan", "pedro", "antonio", "francisco", "sistemas"
 }
 
 def cargar_diccionario_prohibido():
